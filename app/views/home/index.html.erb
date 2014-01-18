@@ -1,0 +1,42 @@
+<center>
+<div class="row">
+  <div class="large-12 large-centered columns">
+      <hr>
+
+    <%= image_tag 'collage.jpg', :style=>'width:500px;height:400px;border:1px solid #000; margin: 1em 1em 1em 1em' %>
+
+
+    <div>
+      <a class="button" href="#" class="btn btn-large btn-success">Preview</a>
+      <input type="text" name="name" value="Enter the recipient's name here..." style="width:300px;text-align:center;font-family:tahoma">
+    </div>
+
+    <div> 
+      <input type="text" name="address" value="Enter the recipients address here..." style="width:300px;text-align:center;font-family:tahoma">&nbsp;
+      <a id="button2" href="#" class="button">Place Order!</a>
+    </div>
+
+  </div> <!--12-Columns-->
+</div> <!-- Row --> 
+</center>
+
+
+<!--script>
+$(document).ready(function() {
+
+$( "#button" ).click(function() {
+  //$( "collage" ).slideUp();
+   //alert("YOU DID IT!");
+   document.getElementById("collage").src= "../../assets/images/collage.jpg";
+
+});
+
+$("#button2").avrund({
+        height:200,
+        holderClose:true,
+        showCloseText:'Close',
+        enableStackAnimation:true,
+        onBlurContainer:'.container',
+        template:'<p>So this worked!</p>'
+    }); });   
+</script>
