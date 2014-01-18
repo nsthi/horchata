@@ -5,6 +5,7 @@ class Authorization < ActiveRecord::Base
   validates_uniqueness_of :uid, :scope => :provider
 
 	def self.find_from_hash(hash)
+		hash.inspect
 	  find_by_provider_and_uid(hash['provider'], hash['uid'])
 	end
 

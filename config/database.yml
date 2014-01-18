@@ -1,3 +1,5 @@
+
+
 # SQLite version 3.x
 #   gem install sqlite3
 #
@@ -6,13 +8,13 @@
 development:
   adapter: postgresql
   database: horchata_dev
-  username: neilsethi
-  password:
+  username: postgres
+  password: lololol
   host: localhost
  
 test: &test
   adapter: postgresql
   database: horchata_dev_test
-  username: neilsethi
-  password:
+  username: postgres
+  password: lololol
   host: localhost
