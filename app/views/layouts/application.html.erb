@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
-
-    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag  "application" %>
+    <%= stylesheet_link_tag "application" %>
     <%= csrf_meta_tags %>
   </head>
 
@@ -19,7 +19,24 @@
         </div> <!-- Large 12 columns-->
       </div> <!--Row-->
 
-      <%= yield %>
+    <script>
+   $(document).ready(function() {
+      $( ".button" ).click(function() {
+      //$( "collage" ).slideUp();
+      //alert("YOU DID IT!");
+      $("#collage").css('visibility', 'visible');
+    });
+      
+      $( ".button2" ).click(function(){
+        $('a.reveal-link').trigger('click');
+        $('a.close-reveal-modal').trigger('click');
+        $('#myModal').foundation('reveal', 'open');
+        $('#myModal').foundation('reveal', 'close');
+      });
+  });
+  </script>
+
+      <%= yield %>      
 
     </div> <!-- Content -->
 
