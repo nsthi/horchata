@@ -1,0 +1,5 @@
+.container {
+    border-radius:6px;
+}
+.btn-primary .caret,.btn-success .caret,.btn-warning .caret,.btn-danger .caret,.btn-info .caret{border-top-color:#fff;}
+.btn-lg .caret{border-width:5px 5px 0;border-bottom-width:0;}

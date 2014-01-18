@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> MHacks </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    </head>
+    <body style="background-color: #4c66a4">
+    <script src="jquery.avgrund.js-master/jquery.avgrund.min"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+       <!-- <script src="js/bootstrap.min.js"></script>-->
+        <h2 style="text-align:center;font-family:tahoma;font-weight:bold; color:#FDFDFD">Horchata</h2>
+        <!--<h2 style="text-align:center;font-family:tahoma;font-weight:bold; color:#FDFDFD">SneakPique</h2>-->
+    </hr>
+    </br>
+        
+<!--        <div class= "container">
+        <h1 style="text-align:center">bitBUYbit <img src="bitcoin6.png" alt="bitcoin" height=50 width=58></h1>
+            <hr></hr>
+        </div>-->
+        <div class="container" style="text-align:center">
+            <img id="collage" src= "blank.gif" style="width:500px;height:400px;border:1px solid #000;"></img>
+        </div>
+
+        <div class="container" style="text-align:center">
+            <br></br>
+            
+            <div><a id="button" href="#" class="btn btn-large btn-success">Preview</a></span></h1>&nbsp <input type="text" name="name" value="Enter the recipient's name here..." style="width:300px;text-align:center;font-family:tahoma"><div>
+
+             <br></br>
+                
+            <div> <input type="text" name="address" value="Enter the recipients address here..." style="width:300px;text-align:center;font-family:tahoma">&nbsp
+            <a id="button2" href="#" class="btn btn-large btn-success">Place Order!</a></div>
+            <br></br>
+
+        <script>
+        $( "#button" ).click(function() {
+          //$( "collage" ).slideUp();
+           //alert("YOU DID IT!");
+           document.getElementById("collage").src= "collage.jpg";
+
+        });
+
+        $("#button2").avrund({
+                height:200,
+                holderClose:true,
+                showCloseText:'Close',
+                enableStackAnimation:true,
+                onBlurContainer:'.container',
+                template:'<p>So this worked!</p>'
+            });    
+        });
+        </script>
+    </body>
+
+</html>
