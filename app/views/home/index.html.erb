@@ -2,10 +2,7 @@
 <div class="row">
   <div class="large-12 large-centered columns">
       <hr>
-
-    <%= image_tag 'collage.jpg', :style=>'width:500px;height:400px;border:1px solid #000; margin: 1em 1em 1em 1em' %>
-
-
+    <%= image_tag 'collage.jpg', :id=> 'collage' %>
     <div>
       <a class="button" href="#" class="btn btn-large btn-success">Preview</a>
       <input type="text" name="name" value="Enter the recipient's name here..." style="width:300px;text-align:center;font-family:tahoma">
@@ -13,12 +10,21 @@
 
     <div> 
       <input type="text" name="address" value="Enter the recipients address here..." style="width:300px;text-align:center;font-family:tahoma">&nbsp;
-      <a id="button2" href="#" class="button">Place Order!</a>
+     <a href="#" data-reveal-id="myModal" class ="button">Click Me For A Modal</a>
     </div>
 
   </div> <!--12-Columns-->
 </div> <!-- Row --> 
+
+<div id="myModal" class="reveal-modal" data-reveal>
+  <h2>YAAY YOU DID IT!</h2>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
 </center>
+
+
 
 
 <!--script>
