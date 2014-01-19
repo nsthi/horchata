@@ -7,6 +7,7 @@ gem 'rails', '3.2.12'
 
 gem 'foundation-rails'
 gem 'pg'
+gem 'delayed_job_active_record'
 gem 'koala', "~> 1.8.0rc1"
 
 # Gems used only for assets and not required
