@@ -6,19 +6,15 @@
     <%= image_tag 'collage.jpg', :id=> 'collage' %>
     <div>
       <a class="button" href="#" class="btn btn-large btn-success">Preview</a>
+      <input type="text" name="name" id="friend_name" value="Enter the recipient's name here..." style="width:300px;text-align:center;font-family:tahoma">
       <div id="user_nav">
-      <% if current_user %>
-        Signed in as <strong><%= current_user.name %></strong>!
-        <%= link_to "Sign out", signout_path, id: "sign_out" %>
-      <% else %>
-        <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
-        <%= form_tag('/auth/facebook') do -%>
-          <%= text_field_tag :name_of_friend, 'Name of your friend' %>
-          <div><%= submit_tag 'Save' %></div>
-        <% end -%>
-
-      <% end %>
-    </div>
+    <% if current_user %>
+      Signed in as <strong><%= current_user.name %></strong>!
+      <%= link_to "Sign out", signout_path, id: "sign_out" %>
+    <% else %>
+      <%= link_to "Sign in with Facebook", "/auth/facebook",:id => "sign_in", :class=> 'send_it' %>
+    <% end %>
+  </div>
     </div>
 
     <div> 
@@ -59,9 +55,18 @@
 </div>
 
 
+<script type="text/javascript">
+
+$('a#sign_in').click(function() {
+  var val = $('input#friend_name').val();
+   var _href = $('a#sign_in').attr("href"); 
+  $("a#sign_in").attr("href", _href + '?p=' + val);
+});
+
+
+</script>
+
 </center>
-
-
 
 
 <!--script>

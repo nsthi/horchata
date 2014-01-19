@@ -64,6 +64,8 @@ GEM
       addressable
       faraday
       multi_json
+    lob (1.2)
+      rest-client
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -116,6 +118,8 @@ GEM
     rake (10.1.1)
     rdoc (3.12.2)
       json (~> 1.4)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     sass (3.2.13)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -146,6 +150,7 @@ DEPENDENCIES
   foundation-rails
   jquery-rails
   koala (~> 1.8.0rc1)
+  lob
   omniauth
   omniauth-facebook
   pg
