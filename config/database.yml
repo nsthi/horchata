@@ -9,12 +9,12 @@ development:
   adapter: postgresql
   database: horchata_dev
   username: postgres
-  password: lololol
+  password: potato
   host: localhost
  
 test: &test
   adapter: postgresql
   database: horchata_dev_test
   username: postgres
-  password: lololol
+  password: potato
   host: localhost
