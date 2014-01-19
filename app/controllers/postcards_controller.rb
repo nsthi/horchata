@@ -38,6 +38,5 @@ class PostcardsController < ApplicationController
 	 #    @graph = Koala::Facebook::API.new(user.oauth_token)
 
 		redirect_to root_path
-		raise
 	end
 end

@@ -18,14 +18,14 @@
     </div>
 
     <div> 
-     <a href="#" data-reveal-id="myModal" class ="button">Click Me For A Modal</a>
+     <a href="#" data-reveal-id="myModal" class ="button">Click to Send Postcard</a>
     </div>
 
   </div> <!--12-Columns-->
 </div> <!-- Row --> 
 
 <div id="myModal" class="reveal-modal" data-reveal>
-  <h2>YAAY YOU DID IT!</h2>
+  <h2>Enter shipping details!</h2>
       <%= form_tag postcards_path do %>
         <%= label_tag :name_of_friend %>
         <%= text_field_tag :name_of_friend, params[:name_of_friend] %>
