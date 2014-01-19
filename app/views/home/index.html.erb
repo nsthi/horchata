@@ -1,15 +1,27 @@
 <center>
+
 <div class="row">
   <div class="large-12 large-centered columns">
       <hr>
     <%= image_tag 'collage.jpg', :id=> 'collage' %>
     <div>
       <a class="button" href="#" class="btn btn-large btn-success">Preview</a>
-      <input type="text" name="name" value="Enter the recipient's name here..." style="width:300px;text-align:center;font-family:tahoma">
+      <div id="user_nav">
+      <% if current_user %>
+        Signed in as <strong><%= current_user.name %></strong>!
+        <%= link_to "Sign out", signout_path, id: "sign_out" %>
+      <% else %>
+        <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+        <%= form_tag('/auth/facebook') do -%>
+          <%= text_field_tag :name_of_friend, 'Name of your friend' %>
+          <div><%= submit_tag 'Save' %></div>
+        <% end -%>
+
+      <% end %>
+    </div>
     </div>
 
     <div> 
-      <input type="text" name="address" value="Enter the recipients address here..." style="width:300px;text-align:center;font-family:tahoma">&nbsp;
      <a href="#" data-reveal-id="myModal" class ="button">Click Me For A Modal</a>
     </div>
 
@@ -18,7 +30,7 @@
 
 <div id="myModal" class="reveal-modal" data-reveal>
   <h2>YAAY YOU DID IT!</h2>
-      <%= form_tag users_path do %>
+      <%= form_tag postcards_path do %>
         <%= label_tag :name_of_friend %>
         <%= text_field_tag :name_of_friend, params[:name_of_friend] %>
 
@@ -27,6 +39,15 @@
 
         <%= label_tag :address_of_friend %>
         <%= text_field_tag :address_of_friend, params[:address_of_friend] %>
+
+        <%= label_tag :city_of_friend %>
+        <%= text_field_tag :city_of_friend, params[:city_of_friend] %>
+
+        <%= label_tag :state_of_friend %>
+        <%= text_field_tag :state_of_friend, params[:state_of_friend] %>
+
+        <%= label_tag :zip_of_friend %>
+        <%= text_field_tag :zip_of_friend, params[:zip_of_friend] %>
 
         <%= label_tag :note %>
         <%= text_field_tag :note, params[:note] %>
