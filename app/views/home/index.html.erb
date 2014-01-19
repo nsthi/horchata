@@ -18,6 +18,22 @@
 
 <div id="myModal" class="reveal-modal" data-reveal>
   <h2>YAAY YOU DID IT!</h2>
+      <%= form_tag users_path do %>
+        <%= label_tag :name_of_friend %>
+        <%= text_field_tag :name_of_friend, params[:name_of_friend] %>
+
+        <%= label_tag :address %>
+        <%= text_field_tag :address, params[:address] %>
+
+        <%= label_tag :address_of_friend %>
+        <%= text_field_tag :address_of_friend, params[:address_of_friend] %>
+
+        <%= label_tag :note %>
+        <%= text_field_tag :note, params[:note] %>
+
+        <%= submit_tag "Send!", class: "btn btn-large btn-primary" %>
+    <% end %>
+
   <a class="close-reveal-modal">&#215;</a>
 </div>
 
