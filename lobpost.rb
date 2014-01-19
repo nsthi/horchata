@@ -18,8 +18,8 @@ require 'lob'
     state: "MA",
     country: "US",
     zip: 12345
-  }
-  front: "postcardback.pdf",
-  message: "Heya!"
+  },
+  message: "hi I happen to work",
+  front: "https://www.lob.com/postcardback.pdf"
 )
 

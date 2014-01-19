@@ -6,13 +6,13 @@
 development:
   adapter: postgresql
   database: horchata_dev
-  username: neilsethi
-  password:
+  username: postgres
+  password: potato
   host: localhost
  
 test: &test
   adapter: postgresql
   database: horchata_dev_test
-  username: neilsethi
-  password:
+  username: postgres
+  password: potato
   host: localhost
