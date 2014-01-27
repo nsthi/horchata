@@ -1,0 +1,9 @@
+We see Lob as a means to make tangible the endless amount of data in which we are inundated. With Lob, we can effortlessly add an extra step-- a personal touch-- in our pursuit of competitive advantage.
+
+As we all know, there's little more that's satisfying than one-upping friends and colleagues. 
+
+Whether that's sending a congratulatory mug to a LinkedIn connection that just landed a new job or offering something a little more than a "Happy Birthday!" on your friend's facebook wall, Lob lets us give more without having to do more. In that spirit, we created Horchata, our first step in strategically using social media connection data to automatically foster personal and professional relationships.
+
+With Horchata, log into facebook, enter a friend you'd like to surprise on their birthday, and press go! Now, on his or her birthday, he/she will receive a postcard collage of your best times together along with a personal message on that back right at their door. Horchata does the rest. It's simple to put a smile on your people's faces.
+
+Scraping data from a facebook login along with an algorithm to programmatically rank optimal pictures were used to create the custom collages. We used the Lob API to handle all the printing and mailing.
